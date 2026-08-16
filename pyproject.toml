@@ -1,10 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "python_package_project_template"
+name = "####################################################################################################"
 version = "0.0.1"
 authors = [
   { name="daisuke6106", email="daisuke6106@gmail.com" },
 ]
-description = "A small python example packagable project"
+description = "####################################################################################################"
 readme = "README.md"
 requires-python = ">=3.12"
 classifiers = [
@@ -12,8 +16,21 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 license = "MIT"
-license-files = ["LICEN[CS]E*"]
+license-files = ["LICENSE"]
+dependencies = [
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/daisuke6106/####################################################################################################"
+Issues = "https://github.com/daisuke6106/####################################################################################################/issues"
+
+[tool.pytest.ini_options]
+# pytestの設定
+# minversion = "8.0"
+# addopts = "-v --color=yes --cov=src/myapp --cov-report=term-missing"
+pythonpath = ["src"]
+testpaths = ["tests/####################################################################################################"]
